@@ -1,6 +1,9 @@
 def oxford_comma(array)
-array = |1, 2, 3|
-last_num = array.pop
-
-
+    if array.size == 1
+      return array[0]
+    elsif array.size == 2
+      return array.join(" and ")
+    else
+      return array
+  end
 end
